@@ -2,7 +2,7 @@
 // const URI = require('urijs');
 const { EGG_SERVER_ENV } = process.env;
 const isProd = EGG_SERVER_ENV && EGG_SERVER_ENV !== 'local';
-// const { createBundleRenderer } = require('vue-server-renderer');
+const { createBundleRenderer } = require('vue-server-renderer');
 
 const obj = {
   createBundleRenderer,
