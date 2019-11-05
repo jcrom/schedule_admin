@@ -1,0 +1,156 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "egg-view-vue",
+        "scope": null,
+        "escapedName": "egg-view-vue",
+        "name": "egg-view-vue",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/qiaoliang/Documents/svn-library/sports/mspsn_V1.1.0/mspsn-web"
+    ]
+  ],
+  "_from": "egg-view-vue@latest",
+  "_id": "egg-view-vue@1.0.0",
+  "_inCache": true,
+  "_location": "/egg-view-vue",
+  "_nodeVersion": "6.10.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/egg-view-vue-1.0.0.tgz_1497430990835_0.33159207878634334"
+  },
+  "_npmUser": {
+    "name": "atian25",
+    "email": "atian25@qq.com"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "egg-view-vue",
+    "scope": null,
+    "escapedName": "egg-view-vue",
+    "name": "egg-view-vue",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/egg-view-vue/-/egg-view-vue-1.0.0.tgz",
+  "_shasum": "53ba3dff33edb8a0940c2151c64951663b42e664",
+  "_shrinkwrap": null,
+  "_spec": "egg-view-vue",
+  "_where": "/Users/qiaoliang/Documents/svn-library/sports/mspsn_V1.1.0/mspsn-web",
+  "author": {
+    "name": "hubcarl@126.com"
+  },
+  "bugs": {
+    "url": "https://github.com/eggjs/egg/issues"
+  },
+  "ci": {
+    "version": "6, 7, 8"
+  },
+  "dependencies": {
+    "lru-cache": "^4.1.1",
+    "vue": "^2.3.4",
+    "vue-server-renderer": "^2.3.4"
+  },
+  "description": "egg view plugin for vue",
+  "devDependencies": {
+    "autod": "^2.8.0",
+    "autod-egg": "^1.0.0",
+    "axios": "^0.16.2",
+    "egg": "^1.4.0",
+    "egg-bin": "^3.6.0",
+    "egg-mock": "^3.7.2",
+    "eslint": "^4.0.0",
+    "eslint-config-egg": "^4.2.1",
+    "vue-router": "^2.5.3",
+    "vuex": "^2.3.1",
+    "vuex-router-sync": "^4.2.0",
+    "webstorm-disable-index": "^1.0.11"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "53ba3dff33edb8a0940c2151c64951663b42e664",
+    "tarball": "https://registry.npmjs.org/egg-view-vue/-/egg-view-vue-1.0.0.tgz"
+  },
+  "eggPlugin": {
+    "name": "vue",
+    "dependencies": [
+      "view"
+    ]
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "files": [
+    "index.js",
+    "app.js",
+    "agent.js",
+    "config",
+    "app",
+    "lib"
+  ],
+  "gitHead": "015948e9570e2a61ad6787a076d681a4ff1a8e91",
+  "homepage": "https://github.com/eggjs/egg-view-vue#readme",
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "egg-view",
+    "vue",
+    "ssr"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "atian25",
+      "email": "atian25@qq.com"
+    },
+    {
+      "name": "dead_horse",
+      "email": "dead_horse@qq.com"
+    },
+    {
+      "name": "eggjs",
+      "email": "fengmk2+eggjs@gmail.com"
+    },
+    {
+      "name": "fengmk2",
+      "email": "fengmk2@gmail.com"
+    },
+    {
+      "name": "jtyjty99999",
+      "email": "jtyjty99999@126.com"
+    },
+    {
+      "name": "popomore",
+      "email": "sakura9515@gmail.com"
+    },
+    {
+      "name": "shaoshuai0102",
+      "email": "shaoshuai0102@gmail.com"
+    }
+  ],
+  "name": "egg-view-vue",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eggjs/egg-view-vue.git"
+  },
+  "scripts": {
+    "autod": "autod",
+    "ci": "npm run lint && npm run cov",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test"
+  },
+  "version": "1.0.0"
+}
