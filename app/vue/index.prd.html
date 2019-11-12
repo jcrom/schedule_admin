@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="theme-color" content="#141318">
+    <meta name="keyword" content="">
+
+    <script>
+      var designW = 750;
+      var docEl = document.documentElement;
+      var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+      var recalc = function() {
+        var clientWidth = Math.min(414, docEl.clientWidth);
+        if (!clientWidth) return;
+        docEl.style.fontSize = 100 * (clientWidth / designW) + 'px';
+      };
+      if (document.addEventListener) {
+        recalc();
+        window.addEventListener(resizeEvt, recalc, false);
+        document.addEventListener('DOMContentLoaded', recalc, false);
+      }
+    </script>
+
+  </head>
+  <body>
+    <!--vue-ssr-outlet-->
+    <!-- pgtitle 用户页面在app内展示时的数据统计 -->
+
+  </body>
+</html>
+

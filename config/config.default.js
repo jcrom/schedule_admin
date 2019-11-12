@@ -6,13 +6,14 @@
  * @param {Egg.EggAppInfo} appInfo app info
  */
 const path = require('path');
+const fs = require('fs');
 module.exports = appInfo => {
   /**
    * built-in config
    * @type {Egg.EggAppConfig}
    **/
   const config = exports = {};
-  const template = fs.readFileSync(path.resolve(__dirname, `../app/vue/index${appInfo.env === 'prd' ? '.prd' : ''}.html`), 'utf-8');
+  const template = fs.readFileSync(path.resolve(__dirname, '../app/vue/index.html'), 'utf-8');
   
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1572944399366_9641';
@@ -40,6 +41,7 @@ module.exports = appInfo => {
   const userConfig = {
     // myAppName: 'egg',
   };
+  
   // vue
   config.vue = {
 

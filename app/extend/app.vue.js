@@ -34,12 +34,11 @@ const obj = {
 };
 
 module.exports = app => {
-  // if (isProd) {
-  //   const vueConfig = app.config.vue;
-  //   obj.render = createBundleRenderer(vueConfig.bundle, Object.assign(
-  //     { clientManifest: vueConfig.clientManifest },
-  //     vueConfig.renderOptions)
-  //   );
-  // }
+  console.log("isProd:", isProd);
+  
+  const vueConfig = app.config.vue;
+  console.log("vueConfig:", vueConfig);
+  
+  obj.render = createBundleRenderer( vueConfig.renderOptions);
   return obj;
 };

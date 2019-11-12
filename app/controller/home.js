@@ -8,7 +8,7 @@ class HomeController extends Controller {
     ctx.body = 'hi, egg';
   }
 
-  async mainPage(){
+  async mainPage() {
     const { ctx } = this;
 
     // console.log('\n\n\n\n\nEGG路由：\n', ctx.params, '\n\n\n\n\n\n');
@@ -17,8 +17,8 @@ class HomeController extends Controller {
     // if (!data.channelName && !data.channelLogo && !data.channelDes) ctx.error({ code: 410 });
 
     // const pageTitle = data.channelName;
-    ctx.body = yield ctx.vue.asyncRender({
-      title: "",
+    ctx.body = await ctx.vue.asyncRender({
+      title: "123",
     });
 
     // 设置缓存
